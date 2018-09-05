@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "bootstrap/dist/css/bootstrap.css";
+
+/* FONTS */
+@font-face {
+  font-family: 'Raleway';
+  src: url('/static/raleway/Raleway-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('/static/raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('/static/raleway/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('/static/raleway/Raleway-SemiBold.ttf') format('truetype');
+}
