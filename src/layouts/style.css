@@ -8,15 +8,18 @@
 
 @font-face {
   font-family: 'Raleway-Bold';
-  src: url('/static/raleway/Raleway-Bold.ttf') format('truetype');
+  src: url('raleway/Raleway-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Raleway-ExtraBold';
-  src: url('/static/raleway/Raleway-ExtraBold.ttf') format('truetype');
+  src: url('raleway/Raleway-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Raleway-SemiBold';
-  src: url('/static/raleway/Raleway-SemiBold.ttf') format('truetype');
+  src: url('raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+body, html{
+  margin: 0;
 }

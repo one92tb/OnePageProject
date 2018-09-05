@@ -41,7 +41,7 @@ position: relative;
 const NavLink = styled.a`
 font:size: 13px;
 padding: 0 23px;
-font-family: 'Releway-Bold';
+font-family: 'Raleway-Bold';
 display: block;
 text-decoration: none:
 background-color: transparent;
@@ -74,22 +74,22 @@ const Navigation = ({ data }) => (
     <img src="/static/logo.png" />
     <Nav>
       <NavItem>
-        <NavLink href="#">home</NavLink>
+        <NavLink>home</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">about us</NavLink>
+        <NavLink>about us</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">services</NavLink>
+        <NavLink>services</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">news</NavLink>
+        <NavLink>news</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">locations</NavLink>
+        <NavLink>locations</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">contact</NavLink>
+        <NavLink>contact</NavLink>
       </NavItem>
       <NavItem>
         <IconBox>

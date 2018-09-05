@@ -5,6 +5,7 @@ const Title = styled.h2`
 font-size: 30px;
 font-family: 'Raleway-Bold';
 text-align: center;
+margin: 0;
 `;
 
 const Description = styled.span`
@@ -13,7 +14,8 @@ font-family: 'Raleway-SemiBold';
 text-align: center;
 display: block;
 color: #888888;
-text-transportation: 'uppercase';
+text-transform: uppercase;
+margin: 11px 0 12px 0;
 `;
 
 const Divider = styled.div`

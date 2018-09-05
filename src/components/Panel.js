@@ -81,6 +81,7 @@ const PanelTitle = styled.h1`
 const PanelContent = styled.span`
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
+  color: #777777;
 `;
 
 const Box = ({ title, description, buttonText }) => (
