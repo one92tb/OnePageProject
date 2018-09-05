@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const NavBar = styled.div`
 background-color: #fefefe;
     height: 81px;
-    padding: 0 30px 0 23px !important;
+    padding: 0 30px 0 23px;
     border-radius: 3px;
     margin-top: 43px;
     position: relative;
@@ -13,6 +13,7 @@ background-color: #fefefe;
     align-items: center;
     justify-content: space-between;
     margin-top: 43px;
+
 `;
 
 const Nav = styled.ul`
@@ -23,23 +24,24 @@ margin: 0;
 list-style: none;
 align-items: center;
 min-height: 100%;
-&:after{
+`;
+
+const NavItem = styled.li`
+
+&:first-child:after{
   content: '';
   position: absolute;
   border: 3px solid #006db7;
   display: block;
   width: 66px;
   bottom: 0;
-}
-`;
 
-const NavItem = styled.li`
-position: relative;
+}
 
 `;
 
 const NavLink = styled.a`
-font:size: 13px;
+font-size: 13px;
 padding: 0 23px;
 font-family: 'Raleway-Bold';
 display: block;
@@ -47,6 +49,8 @@ text-decoration: none:
 background-color: transparent;
 text-transform: uppercase;
 color: #333333;
+
+
 `;
 
 const IconBox = styled.div`
@@ -60,14 +64,7 @@ margin-left: 9px;
 align-items: center;
 `;
 
-const Divider = styled.div`
-position: absolute;
-background: #006db7;
-bottom: 0;
-lefT: 7px;
-width: 66px;
-height: 3px;
-`;
+
 
 const Navigation = ({ data }) => (
   <NavBar>
