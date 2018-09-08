@@ -7,36 +7,43 @@ import Box from '../components/Box'
 import styled from 'styled-components'
 
 
-const Divider = styled.div`
-  margin-top: 164px;
-  background: #fdc300;
-  width: 66px;
-  height: 3px;
-`
-
 const PrimaryButton = styled.button`
   width: 216px;
   height: 49px;
   background: #fdc300;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
   border-radius: 24px 24px 24px 24px;
   border: 0;
   color: #ffffff;
   font-size: 13px;
   font-family: 'Raleway-Bold';
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 575.98px) {
+      display: block;
+      width: 160px;
+      font-size: 11px;
+  }
 `
 
 const Placeholder = styled.div`
   height: 335px;
   background: #1b2936;
+
+  @media (max-width: 1200px) {
+      display: none;
+  }
 `
 
 const PanelContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 1200px) {
+      justify-content: space-around;
+  }
+
 `
 
 const HeroContainer = styled.div`
@@ -47,25 +54,61 @@ const HeroContainer = styled.div`
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 43px;
+
+  @media (max-width: 991.98px) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    border-top: 0px;
+ }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    height: 100%;
+  }
 `
 
 const Wrapper = styled.div`
-  width: 1140px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+
+  @media (max-width: 575.98px) {
+    margin: 0;
+    width: 100%;
+  }
 `
 
 const OfferContainer = styled.div`
-padding-top: 69px;
-height: 636px;
-background: #ffffff;
+  padding-top: 69px;
+  margin-bottom: 90px;
+  background: #ffffff;
+
+@media (max-width: 575.98px) {
+  margin-bottom: 40px;
+}
 `;
 
 const Boxes = styled.div`
-display: flex;
-flex-wrap: wrap;
-margin-top: 40px;
-justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 52px;
+  justify-content: space-between;
+`;
+
+const CenterButton = styled.div`
+  display: flex;
+  margin-top: 50px;
+
+  @media (max-width: 1200px) {
+    margin: 35px 0 40px 0
+  }
+
+  @media (max-width: 575.98px) {
+    margin: 10px 0 30px 0;
+  }
+
 `;
 
 const Home = ({ data }) => {
@@ -77,12 +120,13 @@ const Home = ({ data }) => {
       <HeroContainer>
         <Wrapper>
           <Navigation />
-          <Divider />
           <Jumbotron />
           <PanelContainer>
             {panels.sort((a,b) => a.node.order-b.node.order).map(({ node }) => <Panel {...node} key={node.title} />)}
-            <PrimaryButton>View Details</PrimaryButton>
           </PanelContainer>
+          <CenterButton>
+            <PrimaryButton>View Details</PrimaryButton>
+          </CenterButton>
         </Wrapper>
       </HeroContainer>
       <Placeholder />
